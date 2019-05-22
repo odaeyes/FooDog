@@ -5,7 +5,7 @@
       image: "wordpress"
       restart: "unless-stopped"
       volumes: 
-        - "./wp-content:/var/www/html/wp-content"
+        - "./html:/var/www/html"
       depends_on: 
         - "mysql"
       ports: 
